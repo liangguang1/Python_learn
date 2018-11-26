@@ -23,7 +23,7 @@ browser.implicitly_wait(10)
 
 # 提取页面信息，并写进exlce
 soup = BeautifulSoup(browser.page_source)
-#browser.close()
+browser.close()
 soup_0 = soup.find(id = "sylvanas_0")
 titles = soup.findAll(attrs = {"class" : "title"})
 i = 2
